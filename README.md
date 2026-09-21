@@ -1,23 +1,23 @@
 # Tier0 Plugin
 
-在 Codex 中连接 Tier0，通过自然语言操作已有平台能力。插件负责操作指导和鉴权引导，[Tier0 CLI](https://github.com/FREEZONEX/Tier0-cli) 负责执行平台请求。
+为 AI 助手提供 Tier0 平台连接与操作能力，通过自然语言使用已有平台功能。插件负责操作指导和鉴权引导，[Tier0 CLI](https://github.com/FREEZONEX/Tier0-cli) 负责执行平台请求。
 
-## 安装
+## 使用
 
-在已安装 Codex CLI 的终端执行：
+1. 获取本仓库中的 `plugins/tier0`，按所用 AI 工具支持的方式加载插件或其中的 `skills/platform` 技能。
+2. 在对话中输入“连接 Tier0”。
+3. 根据提示在浏览器登录 Tier0，选择工作区并授权。
+4. 授权完成后，直接提出平台操作需求，例如“查看 UNS 目录”或“列出我的 Flow”。
+
+插件会检查 CLI 和现有登录。缺少 CLI 时引导安装；已有有效授权会复用。安装插件不等于平台授权，也不会在安装时自动发起登录。
+
+运行环境需要终端命令执行能力、Python 3 和 Tier0 CLI；npm 安装器需要 Node.js >=16。手动安装 CLI：
 
 ```sh
-codex plugin marketplace add FREEZONEX/Tier0-plugin
-codex plugin add tier0@tier0
+npx -y @tier0/cli@0.7.0 install
 ```
 
-安装完成后新建 Codex 任务，输入：
-
-> 连接 Tier0
-
-插件先检查 CLI 和现有登录；未登录时提供 Tier0 浏览器授权链接。用户登录、选择工作区并授权后，插件核对身份与权限，再继续原任务。已有有效授权会复用。
-
-首次使用需要 Python 3；缺少 Tier0 CLI 时会引导安装，npm 安装器需要 Node.js >=16。插件安装不等于平台授权，也不会在安装时自动发起登录。
+不同 AI 工具的插件格式和加载入口不同。本仓库提供通用的 Skill、CLI 操作参考与辅助脚本，并保留已有宿主适配配置；具体工具的安装兼容性需分别验证。
 
 ## 支持范围
 
@@ -37,16 +37,16 @@ codex plugin add tier0@tier0
 ## 仓库结构
 
 ```text
-.agents/plugins/marketplace.json  # Codex 插件市场入口
+.agents/plugins/marketplace.json  # 已有宿主的插件市场适配
 plugins/tier0/
-  .codex-plugin/plugin.json      # 插件清单
+  …                             # 宿主适配清单
   skills/platform/               # 操作入口、CLI 参考、鉴权辅助脚本
   tests/                         # 离线模拟测试
   SOURCES.json                   # 上游版本与来源记录
   THIRD_PARTY_LICENSE.txt        # 复用资料的 MIT 许可
 ```
 
-当前发布包装面向 Codex；不宣称已完成其他宿主兼容验证。业务参考复用 Tier0-skill，不要求用户再单独安装该仓库。
+业务参考复用 Tier0-skill，不要求用户再单独安装该仓库。平台请求由独立的 Tier0 CLI 执行，核心工作流不依赖特定模型。
 
 ## 验证与限制
 
