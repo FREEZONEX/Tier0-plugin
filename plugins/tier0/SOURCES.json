@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-09-21",
+  "upstream": [
+    {
+      "repository": "https://github.com/FREEZONEX/Tier0-cli",
+      "commit": "cb4190247e956fd797f80dcadacf3da8ed77016e",
+      "source_package_version": "0.7.0"
+    },
+    {
+      "repository": "https://github.com/FREEZONEX/Tier0-skill",
+      "commit": "b95c845a4437c9fd9f2c0f5caffa64ae7e224b7e",
+      "license": "MIT"
+    }
+  ],
+  "adaptations": [
+    "Replace app-development with platform operations entry",
+    "Rename reference SKILL.md to guide.md and strip frontmatter",
+    "Remove debug flag examples",
+    "Route MQTT credential creation through safe output helper",
+    "Add bounded browser-auth workflow and scope limits"
+  ],
+  "upstream_files": {
+    "uns/SKILL.md": "659b760d9f8d06040c33f4999889869e74beba242bbe050b4fef6b5536ce90e1",
+    "uns/references/search.md": "acd221ecbc0ba6ebfbfa780635c220ffe55cd059138ba828f1e439b78e3e3f1d",
+    "uns/references/restore.md": "c29634583f896237279c8384c663c8ec068e1008200c5a2b08985872d076b64f",
+    "uns/references/history.md": "a80b592d5bd2e79e4a862fb6ad43ae0aef55707798191462d8650887de3726f6",
+    "uns/references/read.md": "a9608a6940b6168c37a4d7470d5dedc56027f3d7598b7dc0052d2351e9659e0f",
+    "uns/references/realtime.md": "d47a2dca028edb241da1fd24b45778773edb602f9377b5535a81a580ce628edc",
+    "uns/references/write.md": "4a108a2b1a8a3edfa78897b3c1cf6f3f372aa7b912a4ca635f28ba1c66b4ccfe",
+    "uns/references/create.md": "3d878958a97811122b736437222ef7f2e0733bd54f8a0a610659fedd96c56342",
+    "uns/references/browse.md": "14970f5fda4967b5218711bcf61ee4ae24a4e407703e5950ce15aeaa57017119",
+    "uns/references/delete.md": "5a5140e1f4b34389bd9aaf329a07f144dfba958bf16c2c3c043b3cf0d51ed479",
+    "uns/references/update.md": "ddeef3e91cd2b481d19e71f06816b49179e5955ac992769d69bf20945484de65",
+    "flow/SKILL.md": "0e56c5950502f2fe70afad9ff2349493f05e95f032dc47e29a55230c10c77c53",
+    "flow/references/http-endpoints.md": "91845d23e993a73b22cfa90302f14f17f357f0614ba6e90ab382940124824747",
+    "flow/references/data.md": "38627273433f1371541df45f21f9fb369bbb0442d30b08d72629495d8d21c1c0",
+    "flow/references/nodes.md": "cfa6a8ad2015d8c8731e5b5fb1a51b392bd1e84e61feff46177d33f6099ecdf2",
+    "flow/references/list.md": "97b9910ad7b7ee7478f0ffda7c44decb9bc059d10e591faeddec16522b7e4ff3",
+    "flow/references/deploy.md": "284fd3cb324fbc598758880c5f7882aae0ac9d29a353a67a861c467d36593055",
+    "flow/references/create.md": "75731ca5e635a176349ff5302a7d4db8c5486d9ba3757d99c47ec85f31128879",
+    "flow/references/delete.md": "8b2cd409448617f2291f763f044c6d3c46dad0823e5921ac5d0ddc13af0f16d9",
+    "flow/references/update.md": "87249bdda78c7c5ce97c0f67d6d43e2d098db0b31ee9d16f03a57476bc1299a2",
+    "flow/references/protocols/modbus.md": "785a336f1b7fbfc781389189cd352d50cea0aead2a21460b51f9e89ba33c656a",
+    "flow/references/protocols/tier0-opcua.md": "f6f74b05ea9344965e788b78b7e8493db6b34bdc5e124132e99e8be94f98a7bc",
+    "flow/references/protocols/README.md": "569e836ad7aec6b3dc245470ad1b6ccfdf7e11bb19f1d97c884fd2cfae74f5f4",
+    "flow/references/protocols/postgresql.md": "52237913d103a42ce9501dc7476b7a7d8c95439104bad2d672f97284268cea20",
+    "flow/references/protocols/opcua.md": "d092064ab1c016a0ce1596094a50933adde3a47d50246a74b2135472862f6a6b",
+    "flow/references/protocols/opcda.md": "071e09bbbd43dea667264921715409a21d9bdde315c9e845b8e9349e413791bd",
+    "flow/references/protocols/mqtt-bridge.md": "146f45505151fc6a5bf597f4191dffaf5360b6d5a7cba4f73127d69e4c70267a",
+    "flow/references/protocols/templates/opcua-subscribe.json": "2d0d5819b536a9022ca9f31d7c0d06cc7e66329e571aca82afaab9371217ef61",
+    "flow/references/protocols/templates/modbus-tcp-read.json": "4404d92a871b9fce699af59435c90135582b2a28b83d4640b5bf3e54e56b40c4",
+    "flow/references/protocols/templates/postgresql-uns-archive.json": "cca350a9abe38faf6ba719da5b16a630c1d5d2e1cc700ba3f677965d57539148",
+    "flow/references/protocols/templates/README.md": "0ed07ad98f289eff880732890a70966d60670d5b3b460a60352c5a6081c471bc",
+    "flow/references/protocols/templates/tier0-opcua-subscribe.json": "1b7b8fcae72023124c39441c748e4b5d362ed7b58fb6eb6a30e32ed287cbf394",
+    "mqtt/SKILL.md": "2c07a910c3b052c43cb058f3c7c57120059f2421046c48a58b69ed897afcf34c",
+    "files/SKILL.md": "26bd005b77c76253231fbe64127c90a241e6133f4cedb55f1e29445aaad24cec",
+    "files/references/url.md": "a810d11c4ac337163f952d7f3af08f912d91189546833344d0c6f66d2bfad8d9",
+    "files/references/upload.md": "a6f314c04d8965174af097a0ca48f755eea938158196d393d87141b23d7ab68f",
+    "files/references/delete.md": "af43b819aa8483879131a6ce27813f07d63c109a198c856b25e63a4611648213",
+    "files/references/download.md": "c8ea34538d15a9ab769a7c649932958eafbdffddb39228a18ecb9d929b16ce0c",
+    "auth/whoami.md": "7f0ebd95271a88693bb399a81da2c9eb2068c13d74d49fb89ab5996873a5db94",
+    "info/info.md": "2dbdf500f4eeb7046598e63c00ae6c0cd9cb6c36ac6ad194265d1d2d240df263",
+    "launchpad/members.md": "273632c3ae5cb63e056fd2d409b97031a7276b78f941e6997fbf4e1f823ab39f",
+    "platform/members.md": "984c128b1123b8744c70c403f7bfedd73ab454038d56bb0040dff73f0f6baf49"
+  }
+}

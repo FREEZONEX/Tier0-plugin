@@ -1,0 +1,20 @@
+{
+  "name": "tier0",
+  "interface": {
+    "displayName": "Tier0"
+  },
+  "plugins": [
+    {
+      "name": "tier0",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tier0"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

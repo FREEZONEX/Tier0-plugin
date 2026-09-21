@@ -1,0 +1,34 @@
+{
+  "name": "tier0",
+  "version": "0.1.0",
+  "description": "通过 Tier0 CLI 登录并操作平台，支持 UNS、Flow、MQTT 和文件。",
+  "author": {
+    "name": "Tier0"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tier0",
+    "shortDescription": "登录 Tier0，使用已有平台能力",
+    "longDescription": "首次使用时检查 CLI 与登录状态，引导用户在 Tier0 浏览器页面授权并确认工作区，然后使用已有的 UNS、Flow、MQTT 和文件能力。成员查询按部署支持情况开放。暂不支持应用生成、源码发布或 App 部署。",
+    "developerName": "Tier0",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "连接 Tier0 并引导我完成登录授权。",
+      "查看当前工作区的 UNS 目录和数据。",
+      "列出我的 SourceFlow 和 EventFlow。"
+    ]
+  },
+  "keywords": [
+    "tier0",
+    "cli",
+    "authentication",
+    "uns",
+    "flow",
+    "mqtt"
+  ],
+  "repository": "https://github.com/FREEZONEX/Tier0-plugin"
+}
