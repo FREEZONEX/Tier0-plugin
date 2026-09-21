@@ -4,6 +4,14 @@
 
 ## 使用
 
+复制下面这句话到支持终端操作的 AI 助手中：
+
+```text
+请帮我安装 https://github.com/FREEZONEX/Tier0-plugin 中的 Tier0 插件，按照仓库说明选择当前工具支持的安装方式，检查并安装必要的 CLI 依赖，然后引导我完成 Tier0 登录授权。
+```
+
+安装与连接流程：
+
 1. 获取本仓库中的 `plugins/tier0`，按所用 AI 工具支持的方式加载插件或其中的 `skills/platform` 技能。
 2. 在对话中输入“连接 Tier0”。
 3. 根据提示在浏览器登录 Tier0，选择工作区并授权。
